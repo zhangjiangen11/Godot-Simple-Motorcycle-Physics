@@ -7,7 +7,13 @@ It is designed to be **easy to understand, easy to integrate**, and **stable for
 This system focuses on **game-ready behavior**, not heavy real-world simulation, while still providing believable riding dynamics.
 
 ---
+## Godot Asset Library
 
+- **Category:** 3D / Physics / RigidBody3D
+- **Godot Version:** 4.5
+- **Asset Type:** Addon
+- **License:** MIT
+- 
 ## ✨ Features
 
 - 🛞 **RayCast-based wheel physics**
@@ -16,7 +22,7 @@ This system focuses on **game-ready behavior**, not heavy real-world simulation,
 - ⚖️ Stable balance system
 - 🔧 Easy to integrate into existing motorcycles
 - 🧠 Clean node-based setup (no complex math required)
-- 🚀 Works with **Godot Engine 4.x**
+- 🚀 Works with **Godot Engine 4.5**
 
 ---
 
@@ -66,7 +72,7 @@ Follow these steps carefully:
 
 ### 1️⃣ Create the Motorcycle Root
 
-- Add a **Node3D** (or RigidBody3D if required by your setup)
+- Add a **Motorcycle** Node
 - Name it something like `Motorcycle`
 
 ---
@@ -80,8 +86,8 @@ Follow these steps carefully:
 
 ### 3️⃣ Front Wheel Setup (Handle Bar)
 
-1. Add a **Node3D** named:
-2. Inside `handle_bar`, add:
+1. Add a **Node3D** named: `handle_bar`
+2. Inside it add:
 - **RayCast3D** → for front wheel ground detection
 - **Node3D** → represents the front tyre (visual or logical)
 
@@ -136,30 +142,6 @@ You must define the following input actions in **Project Settings → Input Map*
 - ✔ Beginner-friendly
 
 ---
-
-## ⚠️ Limitations
-
-This system intentionally avoids:
-- Real gyroscopic equations
-- Advanced tire slip models
-- Suspension geometry simulation
-
-It is meant for **games**, not real-world engineering simulators.
-
----
-
-## 🛠️ Customization Ideas
-
-You can extend this system by adding:
-- Gear-based torque curves
-- Suspension animation
-- Terrain-dependent grip
-- Rider leaning animation
-- AI-controlled motorcycles
-- Mobile tilt steering
-
----
-
 ## 📜 License
 
 This project is open source.  
